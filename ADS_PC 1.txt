@@ -1,0 +1,157 @@
+1.	If the output has multiple values/ multiple new line values write it as comma space separated.
+Ans: If we have the multiple values or multiple new values we need to use string builder function and append commas to particular indices.
+Syntax: StringBuilder sb =new StringBuilder();
+Sb.append(“,”). Append charAt(index);
+	1.What does the following code fragment print when N is 50?
+A:
+ 
+For :N
+1.Stack<Integer>Stack=new Stack<Integer>();
+int N=50
+for(int i=0;i<N(N=50);i++)
+{
+Stack.push(N%2);
+N=N/2;
+}
+If(!stack.isEmpty())
+{
+System.out.println(stack.pop());
+}
+Ans:0,1,0,0,1,1,1,0.
+         For:1  
+
+1.Stack<Integer>Stack=new Stack<Integer>();	
+if (N==50)
+{
+Stack.push(N%2);
+N=N/2;
+}
+Else If(!stack.isEmpty())
+{
+System.out.println(stack.pop());
+}
+Ans:0
+           3.log(N)
+	1.Stack<Integer>Stack=new Stack<Integer>();
+int N=50
+for(int i=0;i>N(N=50);i=N/2)
+{
+Stack.push(N%2);
+}
+If(!stack.isEmpty())
+{
+System.out.println(stack.pop());
+}
+Ans:
+
+4.N^2
+1.Stack<Integer>Stack=new Stack<Integer>();
+int N=50
+for(int i=0;i<N(N=50);i=i++)
+{
+for(int j=0;j<N;i++)
+{
+Stack.push(N%2);
+}
+}
+If(!stack.isEmpty())
+{
+System.out.println(stack.pop());
+}
+Ans:
+N*log(N)
+1.Stack<Integer>Stack=new Stack<Integer>();
+int N=50
+for(int i=0;i>N(N=50);i=i/2)
+{
+Stack.push(N%2);
+}
+If(!stack.isEmpty())
+{
+System.out.println(stack.pop());
+}
+
+
+   
+
+2.	Give the output printed by Queue for the input at the end of all operations
+If “-” perform dequeue else enqueue each word.
+Playing Cricket - is - a hobby - - of - - mentor – Deepak
+Queue(Playing)//playing
+Queues(cricket)// playing cricket
+Dequeue(playing)//Cricket
+Queue (is)//cricket is
+Dequeue(Cricket)//is
+Queue(a)//is a
+Queue(hobby)// is a hobby
+Dequeue(is) //a hobby
+Dequeue(a)//hobby
+Queue(of)//hobby of
+Dequeue(hobby)//of
+Dequeue(of)//null
+Queue(Mentor)//Mentor
+Dequeue(mentor)//null
+Queue(deepak)//Deepak
+Suppose that a client performs an intermixed sequence of (stack) push and pop operations. The push operations put the integers 0 through 9 in order onto the stack; the pop operations print out the return values. Which of the following sequence(s) could not occur?
+Note: For answer write the options in order separated with comma and space eg: a, b, d 
+a. 5 4 3 1 2 0 9 8 7 6
+b. 0 9 8 7 6 5 4 3 2 1
+c. 0 1 2 3 4 5 6 7 8 9
+d. 1 3 5 7 9 2 4 6 8 0
+e. 1 5 0 2 3 4 6 7 8 9 
+Ans: D.
+4.	Give the minimum and maximum occupancy percentages for resizing arrays?
+Give the number of components remain at the end of Quick Find Algorithm for the following union operations.
+a. 3-4
+b. 4-9
+c. 8-0
+d. 2-3
+e. 5-6
+f. 5-9
+g. 7-3
+h. 4-8
+i. 6-1
+ 0 1 2 3 4 5 6 7 8 9
+3-4     0 1 2 3 3 5 6 7 8 9
+4-9     0 1 2 3 3 5 6 7 8 3
+8-0     8 1 2 3 3 5 6 7 8 3
+2-3     8 1 2 2 2 5 6 7 8 2
+5-6     8 1 2 2 2 5 5 7 8 2
+5-9     8 1 5 5 5 5 5 7 8 5
+7-3   8 1 5 5 5 5 5 5 8 5
+4-8    8 1 5 5 5 5 5 5 5 5
+6-1      8 5 5 5 5 5 5 5 5 5
+5.	{[]()} If you use stacks for checking parentheses balanced or not ? After each iteration, Print the size of the stack.
+A: 1) it will push() in iteration 1
+	2) Again Push() in iteration 2
+			3) Pop() in iteration 3
+				4) Push() in Iteration 4.
+					5)Pop() in iteration 5.
+						6)Pop in Iteration 6.
+It will take out the peek elements in popping.
+6.	Give the order of growth (as a function of N, k ) of the running times of the following code fragment:
+Ans 
+   		  Notation O(nlogk)
+7.	Give the order of growth (as a function of n ) of the running times of the following code fragment:
+ 
+Ans: O(NlogN)
+8. Give the order of growth (as a function of n ) of the running times of the following code fragment:
+Ans:2^n
+9. Give the order of growth (as a function of n ) of the running times of the following code fragment:
+ 
+Ans:
+O(N^2)
+10 Give the number of components remain at the end of Quick Find Algorithm for the following union operations.
+a. 3-4
+b. 4-9
+c. 8-0
+d. 2-3
+e. 5-6
+f. 5-9
+g. 7-3
+h. 4-8
+i. 6-1
+Ans: no component remains in the above union operation.
+
+
+
