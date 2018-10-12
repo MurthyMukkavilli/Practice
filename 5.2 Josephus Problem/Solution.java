@@ -53,9 +53,7 @@ public class Solution{
 
 	 public static void main(String[] args) {
 		 Scanner sc=new Scanner(System.in); 
-		 System.out.println("Enter K");
 		 int k=sc.nextInt();
-		 System.out.println("m and n");
 		 while(sc.hasNext())
 		 {
 	        int m = sc.nextInt();
