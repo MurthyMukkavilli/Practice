@@ -1,0 +1,94 @@
+Module 8 - Elementary sorts
+Learning by doing-1
+Show, how selection sort sorts the array E A S Y Q U E S T I O N.
+A:
+Step 1: convert the Alphabets to the Ascii values.
+Step 2:Assign the min position to first element
+Step 3: Run the loop and sort it out.
+            Expected output:
+		first step:AESYQUESTION
+			AEEYQUSSTION
+			AEEIQUSSTYON
+			AEEINUSSTYOQ
+			AEEINOSSTYUQ
+			AEEINOQSTUYS
+			AEEINOQSSTUY
+public class Selection { 
+
+public static void sort(Comparable[] a) {
+
+int N = a.length;    //Blank 1
+
+for (int i = 0; i < N; i++) { 
+
+Int min = i;    //Blank 2
+
+for (int j = i+1; j < N; j++) 
+
+if (less(a[j], a[min])) 
+
+min = j; //Blank3
+
+exch(a, i, min);     //Blank4
+
+}
+
+ }
+
+ }
+
+8)
+
+If a = {3, 6, 4, 2, 1, 0} is the input for below code
+
+public class Insertion { 
+
+public static void sort(Comparable[] a) { 	
+
+int N = a.length; 
+
+for (int i = 1; i < N; i++) { 
+
+for (int j = i; j > 0 && less(a[ j ], a[j-1]); j--) 
+
+exch(a, j, j-1); 
+
+} 
+
+}
+
+}
+
+}
+
+
+Answer the following questions
+
+Note: while writing answers use the following notation [1, 2, 3, 4]
+
+	
+
+Print the elements in the array a, after completion of 2nd iteration of loop i
+
+	Ans:[3,4,6,2,1,0]
+	
+
+Print the elements in the array a, in 3rd iteration of i and after completion of 2nd iteration of loop j
+	
+	Ans:[2,3,4,6,1,0]
+ 
+
+Print the elements in the array a, in 4th iteration of i and after completion of 1st iteration of loop j
+ 
+	Ans:[1,2,3,4,6,0]
+
+
+8. Which method runs faster for an array with all keys identical, basic selection sort or basic insertion sort?
+
+	Ans:Time complexity of Selection- O(n2);-best case=worst case.
+	        Time Complexity of Insertion sort-O(n)-best case ,O(n2)-worst case.
+               			So, the insertion sort is better.
+8.Which method runs faster for an array in reverse order, basic selection sort or basic insertion sort?
+	Ans:Time complexity of Selection- O(n2);-best case=worst case.
+	        Time Complexity of Insertion sort-O(n)-best case ,O(n2)-worst case.
+               			So, the both are same.
