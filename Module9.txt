@@ -1,0 +1,52 @@
+Module 9 - Merge Sort
+Learning by doing-1
+Give traces by showing how the keys E A S Y Q U E S T I O N are sorted with top-down mergesort.
+  
+Ans 		E A S Y Q U E S T I O N
+			E A S Y Q U     E S T I O N  
+
+			E A   S Y  Q U    E S    T I   O N
+			
+			E   A   S   Y   Q  U  E  S  T  I  O  N
+			
+			> A E   S Y    Q U    E  S    I T  N O
+			>AEQUSY     EINOST
+			>AEEINOQSSTUY
+
+Give traces by showing how the keys E A S Y Q U E S T I O N are sorted with bottom-up mergesort.
+
+	Ans:		E A S Y Q U E S T I O N
+			E A   S Y  Q U    E S    T I   O N
+			>AEQUSY     EINOST
+			>AEEINOQSSTUY
+
+3)
+public static void merge(Comparable[] a, int lo, int mid, int hi) { 
+
+int i = lo, 
+
+j = mid+1; 
+
+for (int k = lo; k <= hi; k++) 
+
+aux[k] = a[k]; 
+
+for (int k = lo; k <= hi; k++) 
+
+if (i > mid)                              //Blank 1
+
+a[k] = aux[j++];                      //Blank 2
+
+else if (j > hi )                       //Blank 3
+
+a[k] = aux[i++];                   //Blank 4
+
+else if (less(aux[j], aux[i]))   //Blank 5    //Blank 6
+
+a[k] = aux[j++]; 
+
+else 
+
+a[k] = aux[i++];
+
+ }
