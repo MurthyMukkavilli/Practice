@@ -1,0 +1,39 @@
+public int count(int n) {
+
+  if(n <= 6){
+
+    return 0;
+
+  }
+
+  if(n%10 == 7){
+
+    return 1 + count(n/10);
+
+  }
+
+  return count(n/10);
+
+}
+
+Answer the following question when count method is called with different parameters.
+
+count(717)
+
+Ans: 1
+
+count(7)
+
+Ans: 1
+
+count(123)
+
+Ans:0
+
+count(47571)
+
+Ans:2
+
+count(99999)
+
+Ans:0
