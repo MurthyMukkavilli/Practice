@@ -1,0 +1,30 @@
+Build a max heap with following elements(use the same insertion order) and answer the following questions 
+
+100,  20, 3, 101, 54, 96, 103, 71, 60
+
+      1)Number of heapify operations  required to build a max heap.
+
+Ans:4
+
+      2)  Leaf elements after performing 2nd heapify operation(Right to left).
+Ans:70 60
+
+
+
+      3) Leaf elements after inserting all elements into max heap(First child to last child).
+Ans:20 60
+
+
+      4) Elements at level 1 after building a heap. (Left to right)
+Ans:100 101
+
+
+      5) Children of 101 after building a heap.(Left to right)
+Ans:96,3
+
+
+      6)  Elements at level 1 after sorting 3 elements. (Left to right)
+Ans:100 3
+
+2.Suppose that your application will have a huge number of insert operations, but only a few remove the maximum operations. Which priority-queue implementation do you think would be most effective: heap, unordered array, ordered array?
+A:UnOrdered array, Insert at constant time.
