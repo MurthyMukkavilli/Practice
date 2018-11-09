@@ -1,0 +1,71 @@
+Module 20 - Deletion in BST, Balanced Search Trees(2-3 trees)
+Fill in the blanks-1
+
+Fill the following blanks in the delete method of BST
+
+private Node delete(Node x, Key key) {
+        if (x == null) 	return ____________;  //Blank1
+        int cmp = key.compareTo(_______);  //Blank2
+        if (cmp < 0)	x.left  = delete(__________,  key); //Blank3
+        else if (cmp > 0) 	x.right = delete(__________, key); //Blank4
+        else { 
+            if (x.right == null)		return __________; //Blank5
+            if (x.left  == _____ ) 		return x.right; //Blank6
+            Node t = ________ ;    //Blank7
+            x = min(___________); //Blank8
+           ____________ = deleteMin(t.right);  //Blank9
+            x.left = t.left;
+        } 
+        x.size = size(x.left) + size(x.right) + _________; //Blank10
+        return x;
+    }
+                             Null                         
+Blank1:-----------------------------
+
+
+                             x.key                          
+Blank2:-----------------------------
+
+
+                            x.left
+Blank3:-----------------------------
+
+
+                            x.left
+Blank4:-----------------------------
+
+
+                           x.left
+Blank5:-----------------------------
+
+
+                             x.right           
+Blank6:-----------------------------
+
+
+                                  x
+Blank7:-----------------------------
+
+ 
+                         t.right
+Blank8:-----------------------------
+
+
+                       x.right
+Blank9:-----------------------------
+
+
+                           1
+Blank10:-----------------------------
+
+Learning by doing-1
+Draw the 2-3 tree that results when you insert the keys E A S Y Q U E S T I O N, in that order into an initially empty 2-3 tree.
+A:level1:NO
+Level2:I        S
+Level3:E          ST
+Level4:E                    U
+Level5:A                    QY
+
+Draw a table that compare the worst, best and average cases of insertion, searching and deletion of Linear search symbol table, Binary search symbol table, Binary search tree and 2-3 Tree.
+
+Ans:
